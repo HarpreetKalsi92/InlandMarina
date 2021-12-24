@@ -1,0 +1,111 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="InlandMarina.master.cs" Inherits="InlandMarina.InlandMarina" %>
+<%--Master page 
+Written by James Defant
+Date 25.07.19--%>
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>
+        <asp:ContentPlaceHolder ID="title" runat="server">
+        </asp:ContentPlaceHolder>
+    </title>
+
+    <!-- Bootstrap4 css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+
+    <!-- Custom css -->
+     <link rel="stylesheet" href="styles/styles.css" />
+
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet"/>
+
+    <!--Icons-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous"/>
+
+    <!-- Head placeholder -->
+    <asp:ContentPlaceHolder ID="Head" runat="server">
+    </asp:ContentPlaceHolder>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <header>
+            <asp:Image ID="Image1" runat="server" 
+                AlternateText="Company logo"
+                ImageUrl="~/img/header.png"
+                CssClass="banner img-fluid"/>
+        </header>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-md">
+            <a class="navbar-brand" href="Home.aspx"><i class="fas fa-ship"></i>Inland Marina</a>
+            <button class="navbar-toggler navbar-right" type="button" data-toggle="collapse" data-target="#togglerLinks" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="togglerLinks">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    
+                    <!-- Home link -->
+                    <li class="nav-item">
+                        <asp:HyperLink ID="link_home" runat="server"
+                             NavigateUrl="~/Home.aspx"
+                             CssClass="nav-link">Home</asp:HyperLink>
+                    </li>
+
+                    <!-- Available slips link -->
+                    <li class="nav-item">
+                        <asp:HyperLink ID="link_availableSlip" runat="server"
+                             NavigateUrl="~/AvailableSlip.aspx"
+                             CssClass="nav-link">Available Slip</asp:HyperLink>
+                    </li>
+
+                    <!-- Contact link -->
+                    <li class="nav-item">
+                        <asp:HyperLink ID="link_contact" runat="server"
+                             NavigateUrl="~/Contact.aspx"
+                             CssClass="nav-link">Contact Us</asp:HyperLink>
+                    </li>
+
+                </ul>
+            </div>
+            <ul class="navbar-nav navbar-right">
+
+                <!-- Register link -->
+                <li class="nav-item">
+                    <asp:HyperLink ID="link_register" runat="server"
+                            NavigateUrl="~/Register.aspx"
+                            CssClass="nav-link">Register</asp:HyperLink>
+                </li>
+
+                <!-- Login/Logout link -->
+                <li class="nav-item">
+                    <asp:HyperLink ID="link_login" runat="server"
+                            NavigateUrl="~/Login.aspx"
+                            CssClass="nav-link">Login</asp:HyperLink>
+                </li>
+
+            </ul>
+        </nav>
+
+            <!-- Main placeholder -->
+            <main >
+                <asp:ContentPlaceHolder ID="Main" runat="server">
+                </asp:ContentPlaceHolder>
+            </main>
+
+        <footer>
+            <p>&copy; 2019 - Inland Marina</p>
+        </footer>
+    </form>
+
+    <!-- Bootstrap4 js -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,211 @@
+﻿/*styles.css page*
+    /*Written by Darren Uong/
+
+/*Common styles*/
+body, html {
+    background-color: #d6d6d6;
+}
+img.banner {
+    margin: auto;
+}
+header {
+    display: flex;
+}
+
+/* Login/Register page */
+fieldset {
+    margin: 2rem;
+    border: 10px solid #060038;
+    border-radius: 15px;
+}
+fieldset h1 {
+    text-align: center;
+}
+.error-msg {
+    margin: 2rem;
+}
+.form-group {
+    margin-bottom: 0;
+}
+.validation {
+    color: red;
+    margin: 0;
+}
+.btn {
+    margin: 2rem;
+}
+.alert {
+    display: block;
+}
+
+
+h2{
+    font-family: 'Ubuntu';
+    font-weight: bold;
+    text-decoration: underline;
+}
+header {
+    display: flex;
+}
+
+
+
+.confirmLabels{
+    display: inline-block;
+    width: 75px;
+    color: black;
+    font-family: 'Unubutu';
+}
+
+/*NAVIGATION STYLING*/
+nav {
+    background-color: #060038;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Ubuntu';
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+nav a {
+    color: white;
+    font-size: 24px;
+    display: inline;
+}
+
+
+
+.navbar-brand {
+    font-size: 36px;
+    color: white;
+    padding-bottom: .25em;
+    text-decoration: none;
+}
+
+.navbar-brand:hover {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23453886' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+    background-position: bottom;
+    background-repeat: repeat-x;
+    background-size: 20%;
+    border-bottom: 0;
+    padding-bottom: .3em;
+    text-decoration: none;
+    color: #039dfc;
+}
+
+    /*HEADER STYLES*/
+.pageHeader {
+    font-family: 'Ubuntu';
+    font-size: 48px;
+    color: black;
+    font-weight: bold;
+}
+
+.pageDescription {
+    color: black;
+    font-weight: bold;
+}
+
+
+/*GRIDVIEW STYLING*/
+.rowStyle {
+    background-color: lightslategrey;
+    color: black;
+}
+
+.altRowStyle {
+    background-color: white;
+}
+
+
+.gridView {
+    border-collapse: collapse;
+    border-radius: 0.5em;
+    overflow: hidden;
+    margin: auto;
+}
+
+.gridView th {
+    padding: 5px 25px 4px 5px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.gridView td {
+    border-bottom: 2px solid white;
+}
+
+.gridView input[type="checkbox"] {
+        height: 25px;
+        width: 25px;
+        color: black;
+
+}
+    /*JUMBOTRON STYLING*/
+.slipsJumbo {
+    background-image: url("https://images.unsplash.com/photo-1527731086039-8e31150599cf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjIzODIyfQ&auto=format&fit=crop&w=1534&q=80");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.leaseJumbo {
+    background-image: url("https://images.unsplash.com/photo-1508624217470-5ef0f947d8be?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.homeJumbo {
+    background-image: url("https://images.unsplash.com/photo-1551244072-5d12893278ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.contactJumbo {
+    background-image: url("https://images.unsplash.com/photo-1543936126-5dfdbd4285f6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80 ");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+
+/*BUTTON STYLING*/
+.btn:hover{
+    background-color: white;
+    color: black;
+}
+
+.selectButton {
+    font-weight: bold;
+    color: #000066;
+}
+
+.leaseButton {
+    border-radius: 10px;
+    background-color: #000066;
+    color: white;
+    box-shadow: none;
+    border: none;
+}
+
+.leaseButton:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+
+/*table styling*/
+.labelTable{
+    font-family: 'Ubuntu';
+    font-size: 24px;
+}
+
+.textboxTable{
+    text-align: center;
+    width: 100px;
+    border-radius: 5px;
+    margin: 20px;
+}
